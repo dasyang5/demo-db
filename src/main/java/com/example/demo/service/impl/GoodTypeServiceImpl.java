@@ -12,10 +12,8 @@ public  class GoodTypeServiceImpl extends BaseServiceImpl<GoodsType, String> imp
 
     private GoodsTypeRepository goodsTypeRepository;
 
-
-
     @Override
-    public GoodsType get(String type) {
-        return goodsTypeRepository.findGoodsTypesByType(type);
+    public GoodsType getGoodsTypeByType(String type) {
+        return goodsTypeRepository.findGoodsTypeByType(type);
     }
 }

@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface GoodsTypeRepository extends BaseRepository<GoodsType, String> {
-    GoodsType findGoodsTypesByType(String type);
+    GoodsType findGoodsTypeByType(String type);
 }

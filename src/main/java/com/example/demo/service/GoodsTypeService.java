@@ -6,5 +6,5 @@ import com.example.demo.repository.GoodsTypeRepository;
 
 public interface GoodsTypeService extends BaseService<GoodsType,String> {
 
-
+    GoodsType getGoodsTypeByType(String type);
 }
