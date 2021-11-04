@@ -37,12 +37,22 @@ public class GoodsTypeController extends BaseController {
         return success().tableData(goodsTypeService.findTableData(goodsType, getPageBean()));
     }
 
+    /**
+     * 按照ID删除
+     * @param id
+     * @return
+     */
     @DeleteMapping("delete/{id}")
     public RestResponse delete(@PathVariable(name = "id") String id) {
         goodsTypeService.delete(id);
         return success();
     }
 
+    /**
+     * 按照type删除
+     * @param type
+     * @return
+     */
     @DeleteMapping("/deleteByType")
     public RestResponse deleteByType(String type) {
 
