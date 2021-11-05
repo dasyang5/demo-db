@@ -21,7 +21,7 @@ public class GoodsTypeController extends BaseController {
     public RestResponse add(GoodsType goodsType) {
 
         goodsType.setCreTime(new Date());
-        goodsType.setCreTime(new Date());
+        goodsType.setUpdTime(new Date());
 
         goodsTypeService.save(goodsType);
         return success();
